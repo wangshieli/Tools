@@ -155,5 +155,9 @@ int main(int argc, char* argv[])
 	fclose(fFileRead);
 	fclose(fFileWrite);
 
+	ShellExecute(NULL, "open", argv[3], NULL, NULL, SW_SHOWNORMAL);
+
+	DeleteFile(argv[2]);
+
 	return 0;
 }
